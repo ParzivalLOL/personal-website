@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hello, world!</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="icon" href="favicon.png">
+</head>
+<body class="crimson-pro">
+    <div class="menu">
+        <a href="index.html">
+            <img src="images/home.png" id="home-icon" class="menu-buttons">
+        </a>
+        <div class="menu-buttons-all">
+            <a href="programming.html">
+                <img src="icons/programming-icon.png" id="programming-icon" class="menu-buttons">
+            </a>
+            <a href="projects-robotics.html">
+                <img src="icons/robotics-icon.png" id="robotics-icon" class="menu-buttons">
+            </a>
+            <a href="extracurriculars.html">
+                <img src="icons/extracurriculars-icon.png" id="extracurriculars-icon" class="menu-buttons">
+            </a>
+            <img src="images/programming-nametag.png" id="prog-nametag" class="nametags hidden">
+            <img src="images/robotics-nametag.png" id="rob-nametag" class="nametags hidden">
+            <img src="images/extracurricular-nametag.png" id="ex-nametag" class="nametags hidden">
+        </div>
+    </div>
+  <div id="programming-container">
+    <div class="timestamp">
+        <img src="images/2024.png">
+    </div>
+    <div id="finger-pointer">
+        <div class="project-box-left">
+            <h1 class="project-heading">AI Finger-Pointer</h1>
+            <p class="project-desc">
+                The AI Finger-pointer allows users to transfer the whole functionality of their 
+                mouse over to their fingers. You can 
+                click, scroll and type without being in physical contact with the 
+                computer. Having viewed many surgeries during my 
+                internship at Artemis Hospital, I understand the
+                importance of having sterile conditions. This would allow 
+                surgeons and nurses to operate computers without touching 
+                anything. Watch the video on the right to find out more!
+            </p>
+        </div>
+        <iframe class="grid-image long" id="finger-video" width="auto" height="auto" src="https://www.youtube.com/embed/9lweGwCx5WE?si=iHplZzv8tsbGRDKq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="timestamp">
+        <img src="images/2023.png" id="p2023">
+    </div>
+    <div id="moth-classifier">
+        <div class="project-box-right">
+            <h1 class="project-heading">Moth Classifer - AI/ML</h1>
+            <p class="project-desc">
+                The Moth Classifier allows users to input any photo of a moth and the website will 
+                return the most and second-most likely species along with the respective confidences. The program 
+                uses Python and YOLOv8 image classification model for machine learnig. I trained and tested
+                the model on a publicly available dataset. 
+            </p>
+        </div>
+        <iframe class="grid-image long" id="moth-video" width="auto" height="auto" src="https://www.youtube.com/embed/MqiH_FQzn4Q?si=wLM48a3Y8F5hGo8L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <img src="images/moth-code.png" class="grid-image long" id="moth-code">
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

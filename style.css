@@ -1,0 +1,297 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.crimson-pro {
+    font-family: "Crimson Pro", serif;
+}
+
+.timestamp img{
+    width: 100%;
+}
+
+#main-body {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+#photo-abheek {
+    width: 30%;
+}
+
+#desc-abheek {
+    font-size: 40px;
+    width: 1000px;
+}
+
+.menu {
+    background-color: lightblue;
+    height: 70px;
+}
+
+.menu-buttons-all {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    position: absolute;
+    right: 100px;
+    top: 10px;
+}
+
+#home-icon{
+    position: absolute;
+    top: 10px;
+    left:10px;
+}
+
+.menu-buttons {
+    width: 50px;
+}
+
+.menu-buttons:hover {
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+
+.project-box-left {
+    background-color: lightblue;
+    width: 100%;
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+.project-box-right {
+    background-color: lightblue;
+    width: 100%;
+    grid-column: 4 / 6;
+    grid-row: 1 / 3;
+}
+
+.project-desc {
+    position: relative;
+    top: -50px;
+    font-size: 25px;
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+.project-heading {
+    padding: 20px;
+}
+
+#bws1-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px;
+    gap: 20px;
+}
+
+#bws2-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 200px;
+    gap: 20px;
+    position: relative;
+    top: 20px;
+}
+
+#bws-video {
+    grid-column: 3 / 4;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+#bws-photo-me {
+    grid-column: 4 / 6;
+}
+
+#bws-subject {
+    grid-column: 3 / 4;
+}
+
+#sensors {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+.grid-image {
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Ensure the image inside the container is positioned to crop 10px from the top */
+.grid-image img {
+    position: absolute;
+    top:10px;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.long{
+    height: 420px;
+}
+.short{
+    height: 200px;
+}
+
+
+#rc-car-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 200px;
+    gap: 20px;
+    position: relative;
+    top: 40px;
+}
+
+#car-three-fourth{
+    grid-column: 3 / 5;
+}
+#car-top{
+    grid-column: 5 / 6;
+}
+
+#finger-pointer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px;
+    gap: 20px;
+}
+#finger-video{
+    grid-column: 3 / 5;
+}
+
+#moth-classifier{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px;
+    gap: 20px;
+    position: relative;
+    top:30px;
+}
+#moth-video{
+    grid-column: 1 / 3;   
+}
+#moth-code{
+    filter: blur(1.5px);
+}
+#p2023{
+    position: relative;
+    top:10px;
+}
+#timeline-container{
+    width:100%;
+}
+.timeline-box-left{
+    border-style: solid;
+    width:500px;
+    height: 450px;
+    border-radius: 10px;
+    border-width: 5px;
+    background-color: lightblue;
+    position: relative;
+    left:10%;
+    z-index: 10;
+}
+.timeline-box-right{
+    border-style: solid;
+    width:500px;
+    height: 450px;
+    border-radius: 10px;
+    border-width: 5px;
+    background-color: lightblue;
+    position: relative;
+    left:65%;
+    z-index: 10;
+}
+.timeline-heading{
+    padding: 10px;
+    font-size: 40px;
+}
+.timeline-desc{
+    padding: 10px;
+    font-size: 25px;
+}
+#timeline{
+    width:66px;
+    position: absolute;
+    left:50%;
+}
+#line{
+    width: 6px;
+    background-color: black;
+    height: 1400px;
+    position: absolute;
+    left:50%;
+    z-index: -1;
+}
+.timeline-circle img{
+    width: 60px;
+    height: 60px;
+    border-style: solid;
+    border-radius: 50px;
+    border-width: 6px;
+    background-color: white;
+    position: absolute;
+    left:0px;
+}
+#yts-circle img{
+    top:635px;
+}
+#f1-circle img{
+    top:1105px;
+}
+#artemis-circle img{
+    top:165px;
+}
+.nametags{
+    width:150px;
+    position: absolute;
+    top:65px;
+    z-index: 100;
+}
+#prog-nametag{
+    right: 85px;
+}
+#rob-nametag{
+    right: 15px;
+}
+#ex-nametag{
+    right: -50px;
+}
+.hidden{
+    visibility: hidden;
+}
+.zoomOut{
+    display: block;
+    animation: zoomOut 0.1s forwards;
+}
+.visible{
+    visibility: visible;
+    display: block;
+    animation: zoomIn 0.1s forwards;
+}
+@keyframes zoomIn{
+    from{
+        transform: scale(0);
+        opacity: 0;
+    } to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes zoomOut{
+    from{
+        transform: scale(1);
+        opacity: 1;
+    } to {
+        transform: scale(0);
+        opacity: 0;
+    }
+}

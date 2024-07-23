@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hello, world!</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="icon" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+<body class="crimson-pro">
+  
+  <div class="menu">
+    <a href="index.html">
+      <img src="images/home.png" id="home-icon" class="menu-buttons">
+    </a>
+    <div class="menu-buttons-all">
+        <a href="programming.html">
+          <img src="icons/programming-icon.png" id="programming-icon" class="menu-buttons">
+        </a>
+        <a href="projects-robotics.html">
+          <img src="icons/robotics-icon.png" id="robotics-icon" class="menu-buttons">
+        </a>
+        <img src="icons/extracurriculars-icon.png" id="robotics-icon" class="menu-buttons">
+
+    </div>
+</div>
+  <div id="robotics-container">
+
+    <div class="timestamp">
+      <img src="images/2024.png">
+    </div>
+
+    <div id="bws1-container">
+
+        <div class="project-box-left" id="bws-sens">
+
+            <h1 class="project-heading">Body Wearable System for Parkinson's Disease - Project</h1>
+            <p class="project-desc">At Plaksha University, I worked with undergrads in CS/AI to 
+                develop a non-invasive method of detecting 
+                Parkinson’s Disease in its early stages. As it was a 
+                data collection project, we understood that the more sensors we used the
+                better our research would be. Hence, we connected 12 sensors to our 
+                subject, spread throughout the body as shown in the photo.  I also 
+                programmed a system for AI diagnosis, which had an accuracy of 95.2%, 
+                which was pretty high considering the limitations of the datasets we could find.
+            </p>
+        </div>
+        
+        <iframe class = "bws-grid-item grid-image short" id="bws-video" width="auto" height="auto" src="https://www.youtube.com/embed/Znvw8pDxjq8?si=ox7Xb5Y1R1hHl506" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <img class="grid-image long" id="bws-photo-me" src="images/bws-project-me.jpg">
+        <img class="grid-image short" id="bws-photo-explain" src="images/bws-project-explaining.jpg">
+    </div>
+  
+    <div id="bws2-container">
+      
+      <div class="project-box-right" id="bws-sensor">
+        <h1 class="project-heading">Body Wearable System for Parkinson’s Disease - Sensor</h1>
+        <p class="project-desc">
+          Most sensor boxes include a power supply, a voltage adapter, ESP32 (microcontroller) and an MPU6050 (
+          accelerometer and gyroscope). Combined, these track the movement of the hand and send 
+          the data to a computer using MQTT. This data is stored in a CSV and then plotted 
+          using Python. Some sensor boxes also include an EMG sensor (Electromyography).
+           Signals in our body are transferred using electric signals, so the EMG helps to 
+          detect muscle activity even if there isn’t a noticeable tremor (as in early stages). 
+        </p>
+      </div>
+      <img class="grid-image long" id="bws-subject" src="images/project-subject.jpg">
+      <img class="grid-image long" id="sensors" src="images/sensors-lined-up.jpg">
+    </div>
+
+    <div class="timestamp">
+      <img src="images/2023.png">
+    </div>
+
+    <div id="rc-car-container">
+
+      <div class="project-box-left" id="rc-car">
+
+        <h1 class="project-heading"> Remote Controlled Car </h1>
+        <p class="project-desc">It is a remote-controlled car which can be operated via smartphones. 
+          It uses an ESP32 board for bluetooth communication, 
+          2 DC motors (and the l298n motor driver) which are supplied 9V. 
+        </p>
+
+      </div>
+      <img class="grid-image long" id="car-three-fourth" src="images/rc-car-top.jpg">
+      <img class="grid-image long" id="car-top" src="images/rc-car-three-fourth.jpg">
+    </div>
+</div>
+  <script src="app.js"></script>
+</body>
+</html>
