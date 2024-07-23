@@ -207,7 +207,7 @@ html, body {
     border-width: 5px;
     background-color: lightblue;
     position: relative;
-    left:65%;
+    right:-66%;
     z-index: 10;
 }
 .timeline-heading{
